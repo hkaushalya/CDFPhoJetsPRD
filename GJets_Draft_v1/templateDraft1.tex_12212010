@@ -1,0 +1,625 @@
+% ***************************************************** %
+%                   1st Draft Template                  %
+% ***************************************************** %
+%For 1st draft to the collaboration
+\documentclass[12pt,twoside,letterpaper,doublespace]{article}
+
+
+
+\topmargin -0.25cm
+\textwidth 15.5cm
+\textheight 22cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{lineno}
+\usepackage{setspace}
+\usepackage{xspace}
+\usepackage{subfigure}
+\usepackage{multirow}  % multirows in tables
+\usepackage{multicol}
+
+
+\begin{document}
+
+%define my commands here
+\def\sla#1{\rlap{\kern .15em /}#1}
+\newcommand{\met}{\mbox{$\sla{E}_T$}\xspace}
+\newcommand{\pt}{\mbox{$p_T$}\xspace}
+\newcommand{\Ht}{\mbox{$H_T$}\xspace}
+\newcommand{\et}{\mbox{$E_T$}\xspace}
+\newcommand{\eoverp}{\mbox{$E/p$}\xspace}
+\newcommand{\isoetcorr}{\mbox {$E_ {T}^{Iso(corr)}$\xspace }}
+\newcommand{\phojets}{\mbox{$\gamma$ + jets}\xspace}
+\newcommand{\phoonejet}{\mbox{$\gamma$ + $\geq$1 jet}\xspace}
+\newcommand{\photwojet}{\mbox{$\gamma$ + $\geq$2 jet}\xspace}
+\newcommand{\phojetsmet}{\mbox{\phojets + \met}\xspace}
+\newcommand{\metCorr}{$\sla{E}_T^{corr}$\xspace}
+\newcommand{\figScale}{0.35}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Toggle double spacing and line numbering
+% Won't work with the PRD revtex4 !
+%\pagewiselinenumbers
+%\doublespace
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%
+\begin{figure}[htbp]
+%\begin{center}
+\includegraphics[scale=0.3]{CDFLogo.png}
+%\caption{Elevation view of the CDFII detector.} \label{fig:cdfel}
+%\end{center}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+%comment for the PRD
+\hfill CDF Note 10355
+
+\vspace*{1.5cm}
+
+%uncomment for the PRD
+\title{Search for Anomalous Production of Photon + Jets}
+\author{The CDF Collaboration}
+
+
+%comment for the PRD
+\begin{center}
+\begin{Large}
+Search for Anomalous Production of Photon + Jets + Missing Transverse Energy Events in $p\bar{p}$ collisions at $\sqrt{s}=1.96$~TeV
+\end{Large}
+\end{center}
+
+\vspace{0.5in}
+\begin{center}
+\begin{large}{The CDF Collaboration\\{\textsl{(http://www-cdf.fnal.gov)}}\\}
+\end{large}
+\vspace{2ex}
+\today
+\end{center}
+
+% remove the % for publication
+\vspace*{1.0cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   A B S T R A C T
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+Many new physics models predict mechanisms that could produce a $\gamma$ + jets signature. We search for discrepancies in the $\gamma$ + jets and $\gamma$ + jets + missing transverse energy channels, independent of any model, for new physics using 4.8~fb$^{-1}$ of CDF Run II data collected at the Fermilab Tevatron from $p\bar{p}$ collisions at $\sqrt{s} = 1.96$ TeV.  We measure a variety of kinematic distributions in the data including the transverse energy of the photon, the transverse energy of the leading jet(s), the invariant mass of the photon + leading jet(s), the invariant mass of the two leading jets, and the total transverse energy in the event.  The shapes of these distributions are examined for deviations from expectations based on the Standard Model and non-collision backgrounds.  We find that the data in the $\gamma$ + jets and $\gamma$ + jets + missing transverse energy channels are consistent with Standard Model predictions.
+\end{abstract}
+
+%Two different methods are used to model the contributions from Standard Model processes.
+
+%uncomment for the PRD
+%\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               I N T R O D U C T I O N
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Introduction}
+We present the findings of a model-independent, signature-based search for anomalous photon ($\gamma$) + jets events from $p\bar{p}$ collisions at $\sqrt{s} = 1.96$ TeV using 4.8~fb$^{-1}$ of data recorded by the upgraded Collider Detector at Fermilab (CDF II)~\cite{ref:CDFDetector}. In \phoonejet events and \photwojet events, we measure a variety of kinematic distributions including the transverse energy (\et) of the photon, the transverse energy of the leading jet(s), the invariant mass of the photon + leading jet(s), the invariant mass of the two leading jets, and the total transverse energy in the event ($H_T$).  The shapes of these distributions are examined for deviations from expectations based on Standard Model (SM) processes and other backgrounds.
+
+The Feynman diagrams in Fig.~\ref{fig-sm-feyn} and \ref{fig-gmsb-feyn} illustrate examples of processes that yield the $\gamma$~+~2 jets signature.  It is interesting to search for a discrepancy in a variety of kinematic distributions because a resonance or excess could hint at the existence of a new heavy particle decaying into \phojets, or a new physics mechanism such as gauge-mediated SUSY breaking (GMSB) \cite{ref:models} or Technicolor \cite{ref:TechnicolorModel}. Of particular interest are events with large missing \et (\met), since many new physics models predict the existence of particles that would evade detection and produce an imbalance of transverse energy; for example, a $\tilde{G}$ from $\tilde{\chi}^{0}_{1}\to\gamma \tilde{G}$.  Standard Model $\gamma$ + jets processes have no intrinsic \met.
+
+\begin{figure*}[b!]
+\centering
+\subfigure[]{\label{fig-sm-feyn}
+%\begin{minipage}[b]{0.3\textwidth}
+\includegraphics[scale=0.35]{p1j_compton.pdf}
+\includegraphics[scale=0.35]{p1j_annihilation.pdf}
+\includegraphics[scale=0.35]{p1j_brem.pdf}
+%\end{minipage}
+}
+\qquad\qquad
+\subfigure[]{\label{fig-gmsb-feyn}
+\includegraphics[scale=0.28]{gmsb_1.pdf}\quad
+\includegraphics[scale=0.28]{gmsb_2.pdf}}
+\caption{Feynman diagrams for tree-level (a) Standard Model and (b) GMSB processes that yield the $\gamma$~+~2 jets signature. The Standard Model processes have no intrinsic \met. A SUSY-like signal may be observed in \phojets events with large \met.}
+\end{figure*}
+
+We present two different methods of determining the backgrounds.  In the first method (Method A), we rely on a leading-order Monte Carlo generator (\textsc{pythia}) to predict the kinematic properties of jets in SM $\gamma$ + jets events.  In the second method (Method B), we employ a novel reweighting technique that uses a combination of data and Monte Carlo to model higher-order QCD effects in kinematic distributions involving jets.
+
+\section{Data Sample and Event Selection}
+We select a sample of $\gamma$ candidates by identifying isolated electromagnetic (EM) clusters with \et~$>$~30~GeV in the central region of the calorimeter ($|\eta^{detector}|<1.1$). In addition, we require the EM cluster to pass standard photon selection requirements~\cite{www:PhotonIDAndCESCPR}. To reduce the background from charged leptons, we require an absence of tracks pointing in the direction of the EM cluster. The background from cosmic rays is reduced with a requirement on calorimeter EM timing~\cite{ref:EMtiming}, and we remove events that originate from the beam halo using a set of topological selection requirements~\cite{cdfnote:8409}. Events with photomultiplier tube spikes --- an instrumentation effect that can resemble a $\gamma$ --- are also removed. In the remaining event sample, we identify one or more jets with \mbox{\et$>15$~GeV} and $|\eta^{detector}|<3.0$. Jet energies are corrected for detector response, energy loss, multiple $p\bar{p}$ interactions and the underlying event \cite{pap:JetCorrections}. Furthermore, an azimuthal separation of $\Delta\phi>0.4$ radians between the direction of \met and any jet above \et$>15$~GeV is used to improve the energy measurement of jets.
+
+After applying the event selection requirements described above, we select two data samples based on the number of jets with \et$>15$~GeV: \phoonejet events and \photwojet events. Within these two samples, subsamples with \mbox{\met$>20$~GeV} are identified. By selecting events with large \met, the dominant SM $\gamma$ and jet backgrounds are reduced, hence increasing our sensitivity to new physics. Various kinematic distributions in each of the four data samples are compared to the background expectation. %A typical $\gamma$ + jet event in the CDF detector is depicted in Fig.~\ref{fig-p1j-edited}.
+
+\section{Modeling Backgrounds}\label{sec:modeling}
+
+In this analysis we model backgrounds from two main sources:  SM processes and non-collision processes.  The SM processes include (1) prompt $\gamma$ production, (2) prompt diphoton production, (3) electroweak production of charged leptons that fake a prompt photon, and (4) QCD production of hadronic jets that fake a prompt photon.  The non-collision processes (labeled Non-collision) include energetic particles from cosmic rays and the beam halo that mimic the signal of a prompt proton from a $p\bar{p}$ collision.  The \textsc{pythia} Monte Carlo generator (Tune~A) \cite{ref:pythia} is used to model SM prompt $\gamma$ production, prompt diphoton production, and the electroweak charged lepton backgrounds.  All other backgrounds are modeled using data.  For each of these SM backgrounds and the non-collision background, we construct a background template for each of the kinematic distributions under investigation.  The sum of these background templates is then compared to data.
+
+SM diphotons are a significant source of fake \met background, as the probability to lose one of the photons in an uninstrumented region of the detector is twice as large as in a photon + jet event. The electroweak background is mainly from $W$, $Z$, $WW$, $WZ$, and $ZZ$ production, in which a final state lepton radiates a photon and we identify it as the prompt photon.
+
+The background from QCD multijet production, in which a jet fakes a photon, is modeled using a sample that consists of jets that pass looser photon selection requirements (``sideband'' events). These jets are from neutral mesons like  $\pi^{0}$ and $\eta$ which decay almost exclusively to several photons. This energetic photons cannot be resolved well and are reconstructed as a single isolated photon.
+
+Although a large portion of non-collision backgrounds from cosmic rays and the beam halo is removed by the \phojets selection requirements, some events remain, and these backgrounds are significant in the large \met subsamples. A pure cosmic ray event sample is attained using calorimeter EM timing information and is used to construct the background template. A set of topological cuts is used to select beam halo events.
+
+We employ two different methods to construct templates from these background sources.  In both methods, the SM diphoton and SM charged lepton background templates are normalized to the expected number of events in the \phojets data using their respective Monte Carlo production cross sections and the integrated luminosity of the data. The cosmic ray and beam halo templates are normalized to the expected number of background events in the \phojets data.  The two methods differ in their treatment of the SM $\gamma$ background and the QCD multijet background, as described below.
+
+\vspace{1ex}
+
+\textbf{Method A}:  We model the SM prompt $\gamma$ production using the \textsc{pythia} Monte Carlo generator and the QCD multijet background from sideband events.  In Method A, these two background templates are scaled so that the total number of SM $\gamma$ events ($N^{SM \gamma}$) and the total number of QCD multijet events ($N^{QCD}$) satisfy
+\begin{equation}
+N^{QCD} = f \cdot (N^{SM \gamma}+N^{QCD}),\label{eq:scaling}
+\end{equation}
+where $f$ is the fake photon fraction, which is determined to be
+\begin{equation}
+f~=~\mbox{0.319 $\pm$ 0.001(stat) $\pm$ 0.0068(syst)}\label{eq:fakefraction}
+\end{equation}
+from a study of inclusive photon data with photon \mbox{\et$>$ 30 GeV} \cite{www:PhotonIDAndCESCPR}.  In addition, the overall normalization of the SM $\gamma$ and QCD templates is adjusted so that the total number of background events from all sources equals the number of observed events in the data:
+\begin{equation}
+ N^{data} = N^{SM \gamma}+N^{QCD}+\underbrace{N^\mathrm{Di-\gamma}}_{fixed}+\underbrace{N^\mathrm{EWK}}_{fixed}+\underbrace{N^{non-collision}}_{fixed}.
+\label{eqa:MtdANorm}
+\end{equation}
+When used together, Eqs.~\ref{eq:scaling} and \ref{eqa:MtdANorm} uniquely determine $N^{SM \gamma}$ and $N^{QCD}$.  We note that since the total number of events in the templates is constrained to match the total number of events in the data, our kinematic distributions are not sensitive to anomalies in the overall number of \phojets events, but they are sensitive to anomalies in the shapes of the distributions and excesses in the tails.
+
+Table~\ref{tab:bgsummary1} summarizes the Method A background estimates for the \phoonejet and \photwojet data samples.
+
+
+%Using Method A, the overall fraction of background events from SM $\gamma$ is xxx\%.  This method includes all of the
+
+\vspace{1ex}
+
+\textbf{Method B}: The \textsc{pythia} Monte Carlo event generator that we have used to generate the MC data samples includes only leading-order Feynman diagrams. Hence the additional jets in MC data is derived from gluon radiation (parton showering). Also the jets created by radiation are often softer than the ones created by a hard scattering process. And this is not sufficient to describe data which has all next-to-leading order contributions and a complex mixture of different quark and gluon jets. This deficiency in MC data is clearly demonstrated by the discrepancy observed in the jet multiplicity distribution~\ref{fig:pjSetTwo:NJet} (xxx ref is wrong!!). This also affects the other distributions that depends on correct modeling of jets. As an alternative, we implement a novel method in which the QCD multijet events from the sideband data are used as a substitute for the \textsc{pythia} SM $\gamma$ events.  Although the QCD multijet events originate from a different physical process than prompt $\gamma$ + jets events, we hypothesize that these events, which come from actual data, describe the properties of jets in $\gamma$ + jets events better than leading-order Monte Carlo.
+
+%In order to overcome the limitations of using a leading-order Monte Carlo generator to model jet properties in $\gamma$ + jets events
+
+%Hence, all subleading jets are from parton showering, the underlying event, or from additional $p\bar{p}$ events that are overlaid on the primary hard scattering process.
+
+Since the sideband data presumably do not contain actual prompt photons, and are only QCD background, we do not expect the reconstructed ``QCD photons'' in those events to have the same \et distribution as the actual prompt photons from  \textsc{pythia}.  We therefore reweight the events in the QCD background template in such a way that the reweighted QCD template matches the sum of the \textsc{pythia} SM $\gamma$ and QCD templates for the photon \et distribution.  For an event in bin $i$ of the photon \et distribution, the associated weight is
+\begin{equation}
+w_i = \frac{N_i^{SM \gamma} + N_i^{QCD}}{N_i^{QCD}}\label{eq:weight}
+\end{equation}
+where $N_i^{SM \gamma}$ and $N_i^{QCD}$ are the contents of each bin $i$ of the background templates determined using Method~A.  Using Eq.~\ref{eq:weight}, a unique weight can be assigned to every event in the QCD background sample based on the bin $i$ of the QCD photon \et.
+
+By defining a weight in this manner for every QCD background event, the QCD background template can be reweighted for every kinematic distribution.  In all of the kinematic distributions, the reweighted QCD template replaces the standard QCD template and the SM $\gamma$ template.  In the case of photon \et, by definition, the reweighted QCD background template will be identical to the sum of the SM $\gamma$ and QCD templates.
+
+This reweighting procedure is referred to as Method B.  The reweighted QCD template is normalized so that the total number of events, $N^\mathrm{Reweighted-QCD}$, satisfies:
+
+\begin{equation}
+ N^{data} = N^\mathrm{Reweighted-QCD}+\underbrace{N^\mathrm{Di-\gamma}}_{fixed}+\underbrace{N^\mathrm{EWK}}_{fixed}+\underbrace{N^{non-collision}}_{fixed}.
+\label{eqa:MtdBnorm}
+\end{equation}
+As in Method A, we force the total number of background events to be equal to the total number of data events in each data sample studied.  We have calculated an additional systematic uncertainty for reweighting procedure, and it is included in the plots of Method B distributions.
+
+Table~\ref{tab:bgsummary2} summarizes the Method B background estimates for the \phoonejet and \photwojet data samples. As expected, Method B describes observed data in jet multiplicity distribution well. Also the distributions that directly depends on jets are improved significantly. But as expected this method fails to describe some distributions like the invariant mass of the $\gamma$ and the leading jet (see Fig. \ref{fig:pjMtdBSetOne:Mass_pj1}). This is due to the fact that SM prompt $\gamma$ + jet is modeled using di-jet mass which has many differences in terms of processes, color flow and detector resolution.
+
+
+%%%%%%%%%%%%%%%%%%%% Background Summary for g+jets sample %%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular} {|c|c|c|}
+\hline
+\bf{Background} & \bf{\boldmath$\gamma$ + $\geq$1 Jet Sample} & \bf{\boldmath$\gamma$ + $\geq$2 Jet Sample} \\
+\hline
+Prompt $\gamma$ & 3387044 $\pm$ 1840  $\pm$ 108938&  629569 $\pm$ 793 $\pm$
+39721\\
+\hline
+QCD & 1472467 $\pm$ 1213 $\pm$  27108 & 273681 $\pm$ 523 $\pm$
+6095 \\
+\hline
+Electroweak & 11765 $\pm$ 108  $\pm$ 952& 1833 $\pm$ 42 $\pm$
+271 \\
+\hline
+Diphoton & 12136 $\pm$ 110 $\pm$ 641 & 1775 $\pm$ 42 $\pm$
+196 \\
+\hline
+Non-Collision & 132 $\pm$ 11  $\pm$ 4 & 8 $\pm$  2 $\pm$ 1 \\
+\hline
+\hline
+\hline
+\bf{\phojets Data} & 4883544 $\pm$ 2209 & 906866 $\pm$ 952\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of background estimates for the \phoonejet and \photwojet data samples evaluated by \textit{Method A}.}
+\label{tab:bgsummary1}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Background Summary for g+jets+MET>20 sample %%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular} {|c|c|c|}
+\hline
+\multirow{2}{*}\bf{Background} & \bf{\boldmath$\gamma$ + $\geq$1 Jet + \met$>$20 GeV} & \bf{\boldmath$\gamma$ + $\geq$2 Jet + \met$>$20 GeV} \\
+ & \bf{Sample} & \bf{Sample} \\
+\hline
+Prompt $\gamma$ & 88878 $\pm$ 366 $\pm$ 3178 & 28502 $\pm$ 168 $\pm$ 1429 \\
+\hline
+QCD & 38527 $\pm$ 196 $\pm$ 1664 & 12385 $\pm$ 111 $\pm$
+524 \\
+\hline
+Electroweak & 6271 $\pm$ 79 $\pm$ 613 & 843 $\pm$ 29 $\pm$
+122 \\
+\hline
+Diphoton & 355 $\pm$ 19 $\pm$ 13 & 86 $\pm$ 9 $\pm$
+8 \\
+\hline
+Non-Collision & 124 $\pm$ 12 $\pm$ 4 & 8 $\pm$ 3 $\pm$ 1 \\
+\hline
+\hline
+\hline
+\bf{\phojets Data} & 134155 $\pm$ 366 & 41824 $\pm$ 204\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of background estimates for the \phoonejet + \met$>$20 GeV and \photwojet + \met$>$20 GeV data samples evaluated by \textit{Method A}.}
+\label{tab:bgsummary3}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Background Summary for g+jets sample in Method B%%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular} {|c|c|c|}
+\hline
+\bf{Background} & \bf{\boldmath$\gamma$ + $\geq$1 Jet Sample} & \bf{\boldmath$\gamma$ + $\geq$2 Jet Sample} \\
+\hline
+QCD (weighted) & 4859511 $\pm$ 2204 $\pm$ 149665 & 903250 $\pm$ 950 $\pm$ 44525 \\
+\hline
+Electroweak & 11765 $\pm$ 108  $\pm$ 952& 1833 $\pm$ 42 $\pm$
+271 \\
+\hline
+Diphoton & 12136 $\pm$ 110 $\pm$ 641 & 1775 $\pm$ 42 $\pm$
+196 \\
+\hline
+Non-Collision & 132 $\pm$ 11  $\pm$ 4 & 8 $\pm$  2 $\pm$ 1 \\
+\hline
+\hline
+\hline
+\bf{\phojets Data} & 4883544 $\pm$ 2209 & 906866 $\pm$ 952\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of background estimates for the \phoonejet and \photwojet data samples evaluated by \textit{Method B}.}
+\label{tab:bgsummary2}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Background Summary for g+jets+MET>20 sample %%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular} {|c|c|c|}
+\hline
+\multirow{2}{*}\bf{Background} & \bf{\boldmath$\gamma$ + $\geq$1 Jet + \met$>$20 GeV} & \bf{\boldmath$\gamma$ + $\geq$2 Jet + \met$>$20 GeV} \\
+ & \bf{Sample} & \bf{Sample} \\
+\hline
+QCD (weighted) & 127405 $\pm$ 357 $\pm$ 7040 & 40887 $\pm$ 202 $\pm$ 2103 \\
+\hline
+Electroweak & 6271 $\pm$ 79 $\pm$ 613 & 843 $\pm$ 29 $\pm$
+122 \\
+\hline
+Diphoton & 355 $\pm$ 19 $\pm$ 13 & 86 $\pm$ 9 $\pm$
+8 \\
+\hline
+Non-Collision & 124 $\pm$ 12 $\pm$ 4 & 8 $\pm$ 3 $\pm$ 1 \\
+\hline
+\hline
+\hline
+\bf{\phojets Data} & 134155 $\pm$ 366 & 41824 $\pm$ 204\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of background estimates for the \phoonejet + \met$>$20 GeV and \photwojet + \met$>$20 GeV data samples evaluated by \textit{Method B}.}
+\label{tab:bgsummary4}
+\end{table}
+
+%\section{Search for Resonance Decay}
+%The invariant masses of final state decay products are searched for a resonance (bump) assuming a null hypothesis. For this a $\chi^{2}$ statistical test is performed as defined below.
+
+%\begin{equation}
+% \chi^{2} = \sum \frac{({\cal O}_{k} - E_{k})^{2}}{\sqrt{E_{k}}}
+% \label{eqa:chi2Stat}
+%\end{equation}
+
+%\noindent where for a given bin $k$, ${\cal O}_{k}$ is the number of observed data events and $E_{k}$ is the expected number of events. We expect the number of data events per bin (${\cal O}_{k}$), to have an average value of $E_{k}$ and expected to fluctuate around $E_{k}$ with a standard deviation of order$\sqrt{E_{k}}$. If $\chi^{2}>>n$ where $n$ is the number of frequency bins, the  observed and the expected distributions differ significantly and we expect of a possible resonance production.
+
+
+\section{Results}
+\label{sec:PrelResults}
+We present results in the \phojets data with and without the \met$>20$~GeV requirement.   In the \phoonejet and \photwojet event samples, we measure the \et of the photon, the \et of the leading jet, $H_{T}$ (scalar sum of all EM objects, jets and \met), \met, and invariant mass of photon and leading jet. In addition, in the \photwojet sample, we measure the invariant mass of the photon + two leading jets and the invariant mass of the two leading jets.
+
+Figures \ref{fig:pjSetOne}--\ref{fig:pjSetFour} show Method A results without the \met requirement, and Figures \ref{fig:pjMetSetOne}--\ref{fig:pjMetSetFour} show Method A results with the \met requirement.  The data are represented by black circles, and the backgrounds are shown in different colors.  As described in Section~\ref{sec:modeling}, the SM backgrounds include prompt $\gamma$ production (labeled ``$\gamma$ MC''), QCD multijet production (labeled ``QCD''), prompt diphoton production (labeled ``Di-$\gamma$''), and electroweak production (labeled ``EWK'').  The non-collision backgrounds from cosmic rays and the beam halo are labeled ``Non-collision.''  The top plot uses a logarithmic scale. The shaded region indicates the total systematic uncertainty, which includes the statistical uncertainty on the total background prediction.
+
+The uncertainty due to the jet energy scale is by far the largest systematic uncertainty. Other sources of uncertainty that are taken into account include the following:  parton density functions (PDFs), initial and final state radiation (ISR/FSR), dependence on the renormalization, factorization and normalization scales ($Q^{2}$), the strong coupling constant ($\alpha_{s}$), the fake photon fraction determination, integrated luminosity, EM energy measurements, the beam halo estimate, and the cosmic ray background estimate.
+
+We have measured the photon \et spectrum from \mbox{30 GeV} to about \mbox{550 GeV}, and over this range the total systematic uncertainty increases from 15\% to 90\%. It is evident that the photon purity increases at higher \et.  We are limited by statistics at high \et. The invariant mass of the $\gamma$ + leading jet extends up to \mbox{1000 GeV/c$^{2}$}. Many background predictions become limited by statistics in the high mass region, and the systematic uncertainty increases from 15\% to 90\%. It is evident from these plots that the SM $\gamma$ and QCD multijet  backgrounds are dominant. However with the requirement of large \met in the event, these backgrounds are reduced and real \met from the electroweak processes ({\it e.g.} $W \to \ell \nu$) becomes significant. This \met requirement significantly improves the sensitivity to events in which a heavy particle is produced that we do not detect.
+
+The backgrounds using Method A are well modeled and describe data reasonably well in most of the distributions. But a close inspection reveals discrepancies in certain distributions like lead jet \et, $H_{T}$, jet multiplicity, and \met, which are not within the systematic uncertainties.  These kinematic distributions are most directly affected by the limitations of the leading-order predictions using \textsc{pythia}.
+
+
+% So we opted to further investigate and understand our background modeling in an attempt to understand the causes of such discrepancies.
+
+%It is well known that MC programs have limitations in including next-to-leading order calculations.
+
+%The \textsc{pythia} Monte Carlo event generator that we have used to generate the MC data samples includes only leading-order Feynman diagrams. Hence, all subleading jets are from parton showering, the underlying event, or from additional $p\bar{p}$ events that are overlaid on the primary hard scattering process. This directly affects the aforementioned kinematic variables. Furthermore, this causes the calorimeter \met resolution for MC data to differ from collision data. Hence, it is difficult to describe the low \met is region which is dominated by fake \met from jet energy mismeasurements using MC data.
+
+
+Figures \ref{fig:pjMtdBSetOne}--\ref{fig:pjMtdBSetFour} show the Method~B results without the \met requirement. The Figures \ref{fig:pjmetMtdBSetOne}--\ref{fig:pjmetMtdBSetFour} show the Method~B results with the \met requirement.  In these figures, ``QCD (weighted)'' indicates the reweighted QCD background template that replaces the $\gamma$ MC and QCD templates of Method A.  Using Method B, we are able describe some distributions much better compared to Method A. The photon \et distribution must agree with Method A by construction. The jet \et, $H_{T}$, jet multiplicity and \met distributions, however, show significant improvement and agree well with data. The \met distribution agrees well in the low \met region. Some distributions using Method B were not modeled well as expected. For example the invariant mass of the photon and leading jet shows a large discrepancy, which is attributed to the fact that the QCD background events are from different processes (or Feynman diagrams).
+
+\section{Conclusions}
+We have presented results of the search for beyond SM physics in \phoonejet and \photwojet events with and without a \met~$>$~20~GeV requirement. We have presented two different background prediction methods, Method A and Method B. Each method has proven to describe the \phojets data with certain limitations. We conclude the two methods together provide a greater understanding of data than either method alone. Thus far, we see good agreement with Standard Model predictions extending over several orders of magnitude. The search for new heavy particles in the high \met events has shown no significant deviation from data. We conclude that all of our measurements are in agreement with the Standard Model expectation.
+
+%The search for a narrow resonance using the reconstructed masses of $\gamma$ and the leading jet, $\gamma$ and the leading two jets, and the two leading jets, has not shown a significant difference between distribution of data and the expected distribution. And hence no indication of heavy particle decay or new production mechanisms.
+
+
+\section{Acknowledgements}
+%For PRD change to:
+%\begin{acknowledgments}
+%check for the latest@
+%http://www-cdf.fnal.gov/internal/people/links/CarolPicciolo/standardack.html
+We thank the Fermilab staff and the technical staffs of the participating institutions for their vital contributions. This work was supported by the U.S. Department of Energy and National Science Foundation; the Italian Istituto Nazionale di Fisica Nucleare; the Ministry of Education, Culture, Sports, Science and Technology of Japan; the Natural Sciences and Engineering Research Council of Canada; the National Science Council of the Republic of China; the Swiss National Science Foundation; the A.P. Sloan Foundation; the Bundesministerium f\"ur Bildung und Forschung, Germany; the World Class University Program, the National Research Foundation of Korea; the Science and Technology Facilities Council and the Royal Society, UK; the Institut National de Physique Nucleaire et Physique des Particules/CNRS; the Russian Foundation for Basic Research; the Ministerio de Ciencia e Innovaci\'{o}n, and Programa Consolider-Ingenio 2010, Spain; the Slovak R\&D Agency; and the Academy of Finland.
+%\end{acknowledgments}
+
+\begin{thebibliography}{99}
+\bibitem{ref:CDFDetector}
+    F. Abe \textit{et al}., Nucl. Instrum. Methods Phys. Res. A {\bf 271},
+    387 (1988);
+    D. Amidei \textit{et al}., Nucl. Instum. Methods Phys. Res. A {\bf
+    350}, 73 (1994);
+    F. Abe et al., Phys. Rev. D {\bf 52}, 4784 (1995);
+    P. Azzi \textit{et al}., Nucl. Instrum. Methods Phys. Res. A {\bf
+    360}, 137 (1995);
+    The CDF II Detector Technical Design Report,
+    Fermilab-Pub-96/390-E.
+
+\bibitem{ref:models}
+See for example S. Ambrosanio \textit{et al}., Phys. Rev. D \textbf{54}, 5395 (1996); or C.-H. Chen and J.F. Gunion, Phys. Rev. D \textbf{58}, 075005 (1998).
+
+\bibitem{ref:TechnicolorModel}
+  S. Weinberg, ``Implications of Dynamical Symmetry Breaking: An Addendum'' Phys. Rev. {\bf D19} 1277--1280 (1979);
+  L. Susskind, ``Dynamics of Spontaneous Symmetry Breaking in the Weinberg-Salam Theory'' Phys. Rev. {\bf D20} 2619--2625 (1979)
+
+\bibitem{www:PhotonIDAndCESCPR} F. Abe \textit{et al}., ``Prompt photon cross section measurement in $\bar{p}p$ collisions at $\sqrt{s}$ = 1.8 TeV,'' Phys. Rev. D {\bf 48}, 2998--3025 (1993);
+ F. Abe \textit{et al}., ``Precision Measurement of the Prompt Photon Cross Section in $p\bar{p}$ Collisions at $\sqrt{s}$ = 1.8 TeV,'' Phys. Rev. Lett. {\bf 73}, 2662 (1994).
+
+\bibitem{ref:EMtiming}
+``The Timing System for the CDF Electromagnetic Calorimeters,'' Nucl. Instrum. Meth. A565:543--550, 2006.
+
+\bibitem{cdfnote:8409} M. Goncharov \textit{et al}., ``Discrimination of Beam Halo and Cosmic Rays as a Source of Photon Candidates,'' CDF-Note 8409.
+
+\bibitem{pap:JetCorrections} The CDF Collaboration, ``Determination of the Jet Energy Scale at the Collider Detector at Fermilab,'' Nucl. Instrum. Meth. A566:375--412, 2006.
+
+\bibitem{ref:pythia}
+T. Sj\"{o}strand \textit{et al}., Comput. Phys. Commun. \textbf{135}, 238 (2001).
+
+
+
+
+
+%\bibitem{exp:TrnPlane} \et is the calorimeter energy as measured in the transverse plane.
+
+
+\end{thebibliography}
+
+
+
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% METHOD A: G30 JETS
+\begin{figure*}[h!]
+\centering
+\caption[Method A \phoonejet]{Kinematic distributions of \phoonejet events using Method A. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot1_Et_pho.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot1_Et_j1.pdf}
+}
+
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot1_Ht.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot1_InvMass_pj1.pdf}}
+\label{fig:pjSetOne}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\label{fig:pjSetTwo}
+\centering
+\caption[Method A \phoonejet]{Kinematic distributions of \phoonejet (top) and \photwojet (bottom) events using Method A. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot1_Met.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot1_NJet.pdf}\label{fig:pjSetTwo:NJet}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_Et_pho.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_Et_j1.pdf}}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method A \phoonejet]{Kinematic distributions of \photwojet events using Method A. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_Ht.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_InvMass_j1j2.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_InvMass_pj1j2.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_InvMass_pj1.pdf}}
+\label{fig:pjSetThree}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method A \phoonejet]{Kinematic distributions of \photwojet events using Method A.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdA_plot2_Met.pdf}}
+\label{fig:pjSetFour}
+\end{figure*}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% METHOD A: G30 JETS+MET>20
+\begin{figure*}[h!]
+\centering
+\caption[Method A \phoonejet]{Kinematic distributions of \phoonejet + \met$>$~20~GeV events using \mbox{Method A}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot1_Et_pho.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot1_Et_j1.pdf}
+}
+
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot1_Ht.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot1_InvMass_pj1.pdf}}
+\label{fig:pjMetSetOne}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method A \phoonejet]{Kinematic distributions of \phoonejet + \met$>$~20~GeV (top) and \photwojet + \met$>$~20~GeV (bottom) events using Method A. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot1_Met.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot1_NJet.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_Et_pho.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_Et_j1.pdf}}
+\label{fig:pjMetSetTwo}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method A \photwojet]{Kinematic distributions of \photwojet + \met$>$~20~GeV events using \mbox{Method A}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_Ht.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_InvMass_j1j2.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_InvMass_pj1j2.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_InvMass_pj1.pdf}}
+\label{fig:pjMetSetThree}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method A \photwojet]{Kinematic distributions of \photwojet + \met$>$~20~GeV events using \mbox{Method A}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdA_plot2_Met.pdf}}
+\label{fig:pjMetSetFour}
+\end{figure*}
+
+
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% METHOD B: G30 JETS
+
+\begin{figure*}[h!]
+ \centering
+\caption[Method B \phoonejet]{Kinematic distributions of \phoonejet events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot1_Et_pho.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot1_Et_j1.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot1_Ht.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot1_InvMass_pj1.pdf}
+\label{fig:pjMtdBSetOne:Mass_pj1}
+}
+\label{fig:pjMtdBSetOne}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method B \phoonejet]{Kinematic distributions of \phoonejet and \photwojet events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot1_Met.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot1_NJet.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_Et_pho.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_Et_j1.pdf}}
+\label{fig:pjMtdBSetTwo}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method B \photwojet]{Kinematic distributions of \photwojet events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_Ht.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_InvMass_pj1.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_InvMass_pj1j2.pdf}}
+\subfigure[]
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_InvMass_j1j2.pdf}}
+\label{fig:pjMtdBSetThree}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method B \photwojet]{Kinematic distributions of \photwojet events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30Jets_MtdB_plot2_Met.pdf}}
+\label{fig:pjMtdBSetFour}
+\end{figure*}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% METHOD B: G30 JETS+MET>20
+
+\begin{figure*}[h!]
+ \centering
+\caption[Method B \phoonejet]{Kinematic distributions of \phoonejet + \met$>$~20~GeV events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot1_Et_pho.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot1_Et_j1.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot1_Ht.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot1_InvMass_pj1.pdf}}
+\label{fig:pjmetMtdBSetOne}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method B \phoonejet]{Kinematic distributions of \phoonejet + \met$>$~20~GeV and \photwojet + \met$>$~20~GeV events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot1_Met.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot1_NJet.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_Et_pho.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_Et_j1.pdf}}
+\label{fig:pjmetMtdBSetTwo}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method B \phoonejet]{Kinematic distributions of \photwojet + \met$>$~20~GeV events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_Ht.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_InvMass_pj1.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_InvMass_pj1j2.pdf}}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_InvMass_j1j2.pdf}}
+\label{fig:pjmetMtdBSetThree}
+\end{figure*}
+\clearpage
+
+\begin{figure*}[h!]
+\centering
+\caption[Method B \phoonejet]{Kinematic distributions of \photwojet + \met$>$~20~GeV events using \mbox{Method B}. See Section~\ref{sec:PrelResults} for a description of the elements in these distributions.}
+{\includegraphics[keepaspectratio=true, scale=\figScale]{G30JetsMet20_MtdB_plot2_Met.pdf}}
+\label{fig:pjmetMtdBSetFour}
+\end{figure*}
+
+
+
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

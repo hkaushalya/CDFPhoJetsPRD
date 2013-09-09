@@ -1,0 +1,124 @@
+%new command name guides
+%try to be specific about the type of the command
+%if it is a unit, subscript like, mydegUnit
+%text mods ->  \pythiaText
+%particles -> \zParticle
+
+
+
+%%%update these when more data is included
+\newcommand{\cdfTotCurrLum}{8~fb$^{-1}$} %total lum collected by CDF
+\newcommand{\runperiods}{1--25\xspace}  %lum/datasets/trig stuff for this analysis
+\newcommand{\runrange}{190851 to 277511\xspace}
+\newcommand{\datalumAfterGoodRun}{4.8~fb$^{-1}$\xspace}
+\newcommand{\photonDatasets}{\texttt{cph10d}, \texttt{cph10h}, \texttt{cph10i}, and \texttt{cph10j}\xspace}
+\newcommand{\goodrunfile}{\texttt{goodrun\_v19\_pho\_00}\xspace}
+\newcommand{\resultsHistScale}{0.35}
+
+\newcommand{\firstphotrig}{\mbox{PHOTON\_ISO\_25\xspace}}
+\newcommand{\secondphotrig}{\mbox{PHOTON\_50\xspace}}
+\newcommand{\thirdphotrig}{\mbox{PHOTON\_70\xspace}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand{\w}{\mbox{$W$}\xspace}
+\newcommand{\Z}{\mbox{$Z$}\xspace}
+%\newcommand{\Z0}{\mbox{$Z^{0}$}\xspace}  % do not use the numbers with a previously defined name (Z , Z0) they somehow mess it things
+\newcommand{\zee}{\mbox{$Z\rightarrow e^+e^-$}\xspace}
+\newcommand{\zmm}{\mbox{$Z\rightarrow \mu^+\mu^-$}\xspace}
+\newcommand{\ztt}{\mbox{$Z\rightarrow \tau^+\tau^-$}\xspace}
+\newcommand{\wen}{\mbox{$W\rightarrow e+\nu$}\xspace}
+\newcommand{\wmn}{\mbox{$W\rightarrow \mu+\nu$}\xspace}
+\newcommand{\wtn}{\mbox{$W\rightarrow \tau+\nu$}\xspace}
+
+\newcommand{\zgee}{\mbox{$Z/\gamma^*\rightarrow e^+e^-$}\xspace}
+\newcommand{\W}{\mbox{$W^\pm$}\xspace}
+\newcommand{\Wenu}{\mbox{$W^\pm\rightarrow e^\pm\nu$}\xspace}
+\newcommand{\wenu}{\mbox{$W\rightarrow e\nu$}\xspace}
+\newcommand{\wmnu}{\mbox{$W\rightarrow \mu\nu$}\xspace}
+\newcommand{\wtnu}{\mbox{$W\rightarrow \tau\nu$}\xspace}
+
+\newcommand{\pt}{\mbox{$p_T$}\xspace}
+\newcommand{\et}{\mbox{$E_T$}\xspace}
+\newcommand{\Ht}{\mbox{$H_T$}\xspace}
+\newcommand{\etcorr}{\mbox{$E_T^{corr}$}\xspace}
+\newcommand{\ecorr}{\mbox{$E^{corr}$}\xspace}
+\def\sla#1{\rlap{\kern .15em /}#1}
+\newcommand{\met}{\mbox{$\sla{E}_T$}\xspace}
+\newcommand{\eoverp}{\mbox{$E/p$}\xspace}
+\newcommand{\isoetcorr}{\mbox {$ E_ {T}^{Iso(corr)}$\xspace }}
+%\newcommand{\gammajets}{\mbox{$\gamma$  + $\gt\eq$1~jets + $\met$}}
+%text formatting
+\newcommand{\superscript}[1]{\ensuremath{^\textrm{#1}}}
+\newcommand{\subscript}[1]{\ensuremath{_\textrm{#1}}}
+%\newcommand{\th}[0]{\superscript{th}}
+%\newcommand{\st}[0]{\superscript{st}}
+%\newcommand{\nd}[0]{\superscript{nd}}
+%\newcommand{\rd}[0]{\superscript{rd}}
+%\newcommand{\halojets}{\mbox{{$\gammma^{Halo}~+~jets$}\xspace}}
+\newcommand{\phojets}{\mbox{$\gamma$ + jets}\xspace}
+\newcommand{\phoJets}{\mbox{$\gamma$ + Jets}\xspace}
+\newcommand{\phoonejet}{\mbox{$\gamma +\geq $1 jet}\xspace}
+\newcommand{\photwojet}{\mbox{$\gamma +\geq $2 jets}\xspace}
+\newcommand{\phojetsmet}{\mbox{\phojets + \met}\xspace}
+\newcommand{\phoJetsmet}{\mbox{\phoJets + \met}\xspace}
+\newcommand{\elejets}{\mbox{$\gamma^{e\rightarrow\gamma}$ + jets}\xspace}
+\newcommand{\cosmicjets}{\mbox{$\gamma^{cosmic}$ + jets}\xspace}
+\newcommand{\halojets}{\mbox{$\gamma^{halo}$ + jets}\xspace}
+\newcommand{\wjets}{\mbox{$W$ + jets}\xspace}
+\newcommand{\zjets}{\mbox{$Z$ + jets}\xspace}
+
+\newcommand{\pho}{\mbox{$\gamma$}\xspace}
+\newcommand{\intimewindow}{\mbox{$-4.8$~ns$<t<$+4.8~ns}\xspace}
+\newcommand{\cosmictimewindow}{\mbox{+30~ns$ <t<$+90~ns}\xspace}
+\newcommand{\etg}[1]{\mbox{$\et>$#1~GeV}\xspace}
+\newcommand{\etgte}[1]{\mbox{$\et\geq $#1~GeV}\xspace}
+\newcommand{\etl}[1]{\mbox{$\et<$#1~GeV}\xspace}
+\newcommand{\ptg}[1]{\mbox{$\pt>$#1~GeV}\xspace}
+\newcommand{\ptl}[1]{\mbox{$\pt<$#1~GeV}\xspace}
+\newcommand{\timewindow}[2]{\mbox{$#1$~ns$~< t <#2$~ns}\xspace}
+\newcommand{\dquote}[1]{``#1''\xspace}
+\newcommand{\squote}[1]{`#1'\xspace}
+\newcommand{\etaregion}[2]{\mbox{$#1<\eta<#2$}\xspace}
+\newcommand{\etaabsregion}[2]{\mbox{$#1<|\eta|<#2$}\xspace}
+\newcommand{\etalessthan}[1]{\mbox{$|\eta|\leq#1$}\xspace}
+\newcommand{\metg}[1]{\mbox{$\sla{E}_T$}$>$#1~GeV/c\xspace}
+\newcommand{\metCorr}{$\sla{E}_T^{corr}$\xspace}
+\newcommand{\metRaw}{$\sla{E}_T^{raw}$\xspace}
+\newcommand{\metCorrg}[1]{\mbox{\metCorr$>$#1~GeV/c}\xspace}
+\newcommand{\sumpt}{$\sum \pt$\xspace}
+\newcommand{\sumet}{$\sum \et$\xspace}
+\newcommand{\lumiSymbol}{$\cal L$\xspace}
+
+%Jay said to make variables like this 10-25-2010
+\newcommand{\cutVar}[1]{\texttt{#1}}
+%this is for any new terms, use this instead of quotes
+\newcommand{\newterm}[1]{\textsl{#1}}
+%Figure, Table has to be Capitalized
+\newcommand{\reffig}[1]{Figure~\ref{#1}7\xspace}
+\newcommand{\reftab}[1]{Table~\ref{#1}7\xspace}
+
+\newcommand{\pbar}{\ensuremath{\bar{p}}\xspace}
+\newcommand{\ppbar}{\ensuremath{p\pbar}\xspace}
+\newcommand{\alphas}{$\alpha_{s}$\xspace}
+%\newcommand{\bold}[1]{\textbf{#1}}
+\newcommand{\MC}{Monte Carlo\xspace}
+\newcommand{\MCtext}{Monte Carlo\xspace}
+\newcommand{\SM}{Standard Model\xspace}
+\newcommand{\SMtext}{Standard Model\xspace}
+\newcommand{\GMSBtext}{Gauge Mediated Supersymmetry Breaking\xspace}
+\newcommand{\pythiaText}{{\textsc{Pythia}}\xspace}
+
+%%%%%%%%%%%%%%% list of particles
+\newcommand{\particle}[1]{$#1$\xspace}
+\newcommand{\pizero}{{$\pi^{0}$}\xspace}
+
+
+%%%%%%%%%%% SHORT CUTS TO MEASURING UNITS
+\newcommand{\massunits}{GeV/c$^{2}$\xspace}
+\newcommand{\pbi}{\mbox{pb$^{-1}$}\xspace}
+\newcommand{\fbi}{\mbox{fb$^{-1}$}\xspace}
+\newcommand{\instLumUnits}{cm$^{-2}$s$^{-1}$}
+\newcommand{\degree}{\ensuremath{^\circ}}  % to get the superscript circle in degrees

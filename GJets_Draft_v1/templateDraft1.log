@@ -1,0 +1,548 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.8)  21 APR 2011 13:28
+entering extended mode
+ %&-line parsing enabled.
+**templateDraft1.tex
+(./templateDraft1.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks15
+\extratabsurround=\skip43
+\backup@length=\skip44
+))
+(/usr/share/texmf-texlive/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/share/texmf-texlive/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count88
+\output=\toks16
+\linenoprevgraf=\count89
+\linenumbersep=\dimen107
+\linenumberwidth=\dimen108
+\c@linenumber=\count90
+\c@pagewiselinenumber=\count91
+\c@LN@truepage=\count92
+\c@internallinenumber=\count93
+\c@internallinenumbers=\count94
+\quotelinenumbersep=\dimen109
+\bframerule=\dimen110
+\bframesep=\dimen111
+\bframebox=\box26
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip45
+\subfigcapskip=\skip46
+\subfigcaptopadj=\dimen112
+\subfigbottomskip=\skip47
+\subfigcapmargin=\dimen113
+\subfiglabelskip=\skip48
+\c@subfigure=\count95
+\c@lofdepth=\count96
+\c@subtable=\count97
+\c@lotdepth=\count98
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip49
+\subfig@bottom=\skip50
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen114
+)
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
+Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+\c@tracingmulticols=\count99
+\mult@box=\box27
+\multicol@leftmargin=\dimen115
+\c@unbalance=\count100
+\c@collectmore=\count101
+\doublecol@number=\count102
+\multicoltolerance=\count103
+\multicolpretolerance=\count104
+\full@width=\dimen116
+\page@free=\dimen117
+\premulticols=\dimen118
+\postmulticols=\dimen119
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box28
+\last@line=\box29
+\mult@rightbox=\box30
+\mult@grightbox=\box31
+\mult@gfirstbox=\box32
+\mult@firstbox=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\c@columnbadness=\count105
+\c@finalcolumnbadness=\count106
+\last@try=\dimen120
+\multicolovershoot=\dimen121
+\multicolundershoot=\dimen122
+\mult@nat@firstbox=\box51
+\colbreak@box=\box52
+)
+
+LaTeX Warning: Unused global option(s):
+    [doublespace].
+
+(./templateDraft1.aux)
+\openout1 = `templateDraft1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+ (/usr/share/texmf/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen123
+\scratchbox=\box53
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen124
+\MPnumerator=\count111
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <20.74> on input line 57.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 57.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 57.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 57.
+
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 86.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<p1j_compton.pdf, id=13, 256.96pt x 238.8925pt>
+File: p1j_compton.pdf Graphic file (type pdf)
+ <use p1j_compton.pdf>
+<p1j_annihilation.pdf, id=14, 249.93375pt x 226.8475pt>
+File: p1j_annihilation.pdf Graphic file (type pdf)
+
+<use p1j_annihilation.pdf> <p1j_brem.pdf, id=15, 214.8025pt x 227.85126pt>
+File: p1j_brem.pdf Graphic file (type pdf)
+
+<use p1j_brem.pdf> <gmsb_1.pdf, id=16, 434.62375pt x 476.78125pt>
+File: gmsb_1.pdf Graphic file (type pdf)
+
+<use gmsb_1.pdf> <gmsb_2.pdf, id=17, 471.7625pt x 470.75874pt>
+File: gmsb_2.pdf Graphic file (type pdf)
+
+<use gmsb_2.pdf> [2 <./p1j_compton.pdf> <./p1j_annihilation.pdf> <./p1j_brem.pd
+f> <./gmsb_1.pdf> <./gmsb_2.pdf>] [3] [4] [5]
+Overfull \hbox (14.69989pt too wide) in paragraph at lines 206--229
+ [] 
+ []
+
+[6]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (19.06546pt too wide) in paragraph at lines 301--321
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7]
+
+LaTeX Warning: Reference `eqa:FakeFraction' on page 8 undefined on input line 3
+41.
+
+[8] [9] [10] [11] [12] [13]
+<G30Jets_MtdA_plot1_Et_pho.pdf, id=96, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot1_Et_pho.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot1_Et_pho.pdf>
+<G30Jets_MtdA_plot1_Et_j1.pdf, id=97, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot1_Et_j1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot1_Et_j1.pdf>
+<G30Jets_MtdA_plot1_Ht.pdf, id=98, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot1_Ht.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot1_Ht.pdf>
+<G30Jets_MtdA_plot1_InvMass_pj1.pdf, id=99, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot1_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot1_InvMass_pj1.pdf> [14
+
+ <./G30Jets_MtdA_plot1_Et_pho.pdf> <./G30Jets_MtdA_plot1_Et_j1.pdf> <./G30Jets_
+MtdA_plot1_Ht.pdf> <./G30Jets_MtdA_plot1_InvMass_pj1.pdf>]
+<G30Jets_MtdA_plot1_Met.pdf, id=151, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot1_Met.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot1_Met.pdf>
+<G30Jets_MtdA_plot1_NJet.pdf, id=152, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot1_NJet.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot1_NJet.pdf>
+<G30Jets_MtdA_plot2_Et_pho.pdf, id=153, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_Et_pho.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_Et_pho.pdf>
+<G30Jets_MtdA_plot2_Et_j1.pdf, id=154, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_Et_j1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_Et_j1.pdf> [15
+
+ <./G30Jets_MtdA_plot1_Met.pdf> <./G30Jets_MtdA_plot1_NJet.pdf> <./G30Jets_MtdA
+_plot2_Et_pho.pdf> <./G30Jets_MtdA_plot2_Et_j1.pdf>] <G30Jets_MtdA_plot2_Ht.pdf
+, id=206, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_Ht.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_Ht.pdf>
+<G30Jets_MtdA_plot2_InvMass_j1j2.pdf, id=207, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_InvMass_j1j2.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_InvMass_j1j2.pdf>
+<G30Jets_MtdA_plot2_InvMass_pj1j2.pdf, id=208, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_InvMass_pj1j2.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_InvMass_pj1j2.pdf>
+<G30Jets_MtdA_plot2_InvMass_pj1.pdf, id=209, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_InvMass_pj1.pdf> [16
+
+ <./G30Jets_MtdA_plot2_Ht.pdf> <./G30Jets_MtdA_plot2_InvMass_j1j2.pdf> <./G30Je
+ts_MtdA_plot2_InvMass_pj1j2.pdf> <./G30Jets_MtdA_plot2_InvMass_pj1.pdf>]
+<G30Jets_MtdA_plot2_Met.pdf, id=261, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdA_plot2_Met.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdA_plot2_Met.pdf> [17
+
+ <./G30Jets_MtdA_plot2_Met.pdf>]
+<G30JetsMet20_MtdA_plot1_Et_pho.pdf, id=277, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot1_Et_pho.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot1_Et_pho.pdf>
+<G30JetsMet20_MtdA_plot1_Et_j1.pdf, id=278, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot1_Et_j1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot1_Et_j1.pdf>
+<G30JetsMet20_MtdA_plot1_Ht.pdf, id=279, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot1_Ht.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot1_Ht.pdf>
+<G30JetsMet20_MtdA_plot1_InvMass_pj1.pdf, id=280, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot1_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot1_InvMass_pj1.pdf> [18
+
+ <./G30JetsMet20_MtdA_plot1_Et_pho.pdf> <./G30JetsMet20_MtdA_plot1_Et_j1.pdf> <
+./G30JetsMet20_MtdA_plot1_Ht.pdf> <./G30JetsMet20_MtdA_plot1_InvMass_pj1.pdf>]
+<G30JetsMet20_MtdA_plot1_Met.pdf, id=332, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot1_Met.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot1_Met.pdf>
+<G30JetsMet20_MtdA_plot1_NJet.pdf, id=333, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot1_NJet.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot1_NJet.pdf>
+<G30JetsMet20_MtdA_plot2_Et_pho.pdf, id=334, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_Et_pho.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_Et_pho.pdf>
+<G30JetsMet20_MtdA_plot2_Et_j1.pdf, id=335, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_Et_j1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_Et_j1.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./G30JetsMet20_MtdA_plot1_Met.pdf> <./G30JetsMet20_MtdA_plot1_NJet.pdf> <.
+/G30JetsMet20_MtdA_plot2_Et_pho.pdf> <./G30JetsMet20_MtdA_plot2_Et_j1.pdf>]
+<G30JetsMet20_MtdA_plot2_Ht.pdf, id=388, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_Ht.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_Ht.pdf>
+<G30JetsMet20_MtdA_plot2_InvMass_j1j2.pdf, id=389, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_InvMass_j1j2.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_InvMass_j1j2.pdf>
+<G30JetsMet20_MtdA_plot2_InvMass_pj1j2.pdf, id=390, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_InvMass_pj1j2.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_InvMass_pj1j2.pdf>
+<G30JetsMet20_MtdA_plot2_InvMass_pj1.pdf, id=391, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_InvMass_pj1.pdf> [20
+
+
+ <./G30JetsMet20_MtdA_plot2_Ht.pdf> <./G30JetsMet20_MtdA_plot2_InvMass_j1j2.pdf
+> <./G30JetsMet20_MtdA_plot2_InvMass_pj1j2.pdf> <./G30JetsMet20_MtdA_plot2_InvM
+ass_pj1.pdf>]
+<G30JetsMet20_MtdA_plot2_Met.pdf, id=443, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdA_plot2_Met.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdA_plot2_Met.pdf> [21
+
+ <./G30JetsMet20_MtdA_plot2_Met.pdf>]
+<G30Jets_MtdB_plot1_Et_pho.pdf, id=459, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot1_Et_pho.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot1_Et_pho.pdf>
+<G30Jets_MtdB_plot1_Et_j1.pdf, id=460, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot1_Et_j1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot1_Et_j1.pdf>
+<G30Jets_MtdB_plot1_Ht.pdf, id=461, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot1_Ht.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot1_Ht.pdf>
+<G30Jets_MtdB_plot1_InvMass_pj1.pdf, id=462, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot1_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot1_InvMass_pj1.pdf> [22
+
+ <./G30Jets_MtdB_plot1_Et_pho.pdf> <./G30Jets_MtdB_plot1_Et_j1.pdf> <./G30Jets_
+MtdB_plot1_Ht.pdf> <./G30Jets_MtdB_plot1_InvMass_pj1.pdf>]
+<G30Jets_MtdB_plot1_Met.pdf, id=514, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot1_Met.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot1_Met.pdf>
+<G30Jets_MtdB_plot1_NJet.pdf, id=515, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot1_NJet.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot1_NJet.pdf>
+<G30Jets_MtdB_plot2_Et_pho.pdf, id=516, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_Et_pho.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_Et_pho.pdf>
+<G30Jets_MtdB_plot2_Et_j1.pdf, id=517, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_Et_j1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_Et_j1.pdf> [23
+
+ <./G30Jets_MtdB_plot1_Met.pdf> <./G30Jets_MtdB_plot1_NJet.pdf> <./G30Jets_MtdB
+_plot2_Et_pho.pdf> <./G30Jets_MtdB_plot2_Et_j1.pdf>] <G30Jets_MtdB_plot2_Ht.pdf
+, id=569, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_Ht.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_Ht.pdf>
+<G30Jets_MtdB_plot2_InvMass_pj1.pdf, id=570, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_InvMass_pj1.pdf>
+<G30Jets_MtdB_plot2_InvMass_pj1j2.pdf, id=571, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_InvMass_pj1j2.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_InvMass_pj1j2.pdf>
+<G30Jets_MtdB_plot2_InvMass_j1j2.pdf, id=572, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_InvMass_j1j2.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_InvMass_j1j2.pdf> [24
+
+ <./G30Jets_MtdB_plot2_Ht.pdf> <./G30Jets_MtdB_plot2_InvMass_pj1.pdf> <./G30Jet
+s_MtdB_plot2_InvMass_pj1j2.pdf> <./G30Jets_MtdB_plot2_InvMass_j1j2.pdf>]
+<G30Jets_MtdB_plot2_Met.pdf, id=624, 569.12625pt x 736.7525pt>
+File: G30Jets_MtdB_plot2_Met.pdf Graphic file (type pdf)
+
+<use G30Jets_MtdB_plot2_Met.pdf> [25
+
+ <./G30Jets_MtdB_plot2_Met.pdf>]
+<G30JetsMet20_MtdB_plot1_Et_pho.pdf, id=641, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot1_Et_pho.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot1_Et_pho.pdf>
+<G30JetsMet20_MtdB_plot1_Et_j1.pdf, id=642, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot1_Et_j1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot1_Et_j1.pdf>
+<G30JetsMet20_MtdB_plot1_Ht.pdf, id=643, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot1_Ht.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot1_Ht.pdf>
+<G30JetsMet20_MtdB_plot1_InvMass_pj1.pdf, id=644, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot1_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot1_InvMass_pj1.pdf> [26
+
+ <./G30JetsMet20_MtdB_plot1_Et_pho.pdf> <./G30JetsMet20_MtdB_plot1_Et_j1.pdf> <
+./G30JetsMet20_MtdB_plot1_Ht.pdf> <./G30JetsMet20_MtdB_plot1_InvMass_pj1.pdf>]
+<G30JetsMet20_MtdB_plot1_Met.pdf, id=696, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot1_Met.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot1_Met.pdf>
+<G30JetsMet20_MtdB_plot1_NJet.pdf, id=697, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot1_NJet.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot1_NJet.pdf>
+<G30JetsMet20_MtdB_plot2_Et_pho.pdf, id=698, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_Et_pho.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_Et_pho.pdf>
+<G30JetsMet20_MtdB_plot2_Et_j1.pdf, id=699, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_Et_j1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_Et_j1.pdf> [27
+
+ <./G30JetsMet20_MtdB_plot1_Met.pdf> <./G30JetsMet20_MtdB_plot1_NJet.pdf> <./G3
+0JetsMet20_MtdB_plot2_Et_pho.pdf> <./G30JetsMet20_MtdB_plot2_Et_j1.pdf>]
+<G30JetsMet20_MtdB_plot2_Ht.pdf, id=751, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_Ht.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_Ht.pdf>
+<G30JetsMet20_MtdB_plot2_InvMass_pj1.pdf, id=752, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_InvMass_pj1.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_InvMass_pj1.pdf>
+<G30JetsMet20_MtdB_plot2_InvMass_pj1j2.pdf, id=753, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_InvMass_pj1j2.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_InvMass_pj1j2.pdf>
+<G30JetsMet20_MtdB_plot2_InvMass_j1j2.pdf, id=754, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_InvMass_j1j2.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_InvMass_j1j2.pdf> [28
+
+ <./G30JetsMet20_MtdB_plot2_Ht.pdf> <./G30JetsMet20_MtdB_plot2_InvMass_pj1.pdf>
+ <./G30JetsMet20_MtdB_plot2_InvMass_pj1j2.pdf> <./G30JetsMet20_MtdB_plot2_InvMa
+ss_j1j2.pdf>]
+<G30JetsMet20_MtdB_plot2_Met.pdf, id=806, 569.12625pt x 736.7525pt>
+File: G30JetsMet20_MtdB_plot2_Met.pdf Graphic file (type pdf)
+
+<use G30JetsMet20_MtdB_plot2_Met.pdf> [29
+
+ <./G30JetsMet20_MtdB_plot2_Met.pdf>]
+(./templateDraft1.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1991 strings out of 495061
+ 32142 string characters out of 1182622
+ 82894 words of memory out of 3000000
+ 5113 multiletter control sequences out of 15000+50000
+ 18044 words of font info for 61 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 25i,10n,24p,1616b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on templateDraft1.pdf (29 pages, 1453917 bytes).
+PDF statistics:
+ 878 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+
